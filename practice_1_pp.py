@@ -126,7 +126,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 print("read images using opencv")
-five = cv2.imread('/content/drive/MyDrive/Colab Notebooks/input/5.png')
+five = cv2.imread('5.png') 
 #menampilkan ukuran image, height width channels
 print(five.shape)
 #menampilkan banyaknya nilai matriks 141*144*3
@@ -139,7 +139,7 @@ cv2.waitKey(0)
 """# *CONVERT IMAGE*"""
 
 import cv2
-babon = cv2.imread("/content/drive/MyDrive/Colab Notebooks/input/logo IPB.png")
+babon = cv2.imread("logo IPB.png")
 babon_gray = cv2.cvtColor(babon, cv2.COLOR_BGR2GRAY)
 
 plt.imshow(babon)
